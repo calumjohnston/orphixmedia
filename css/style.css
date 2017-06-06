@@ -69,7 +69,7 @@ a{
 img{
     max-width: 100%;
 }
-84
+
 ::selection {
   background: #eee; /* WebKit/Blink Browsers */
 }
@@ -81,7 +81,7 @@ img{
 
 .container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 #lead-text{
@@ -101,24 +101,68 @@ section{
     padding: 75px 20px;
 }
 
+/*About us*/
+.about-us{
+    display:flex;
+    align-items:center;
+    height:400px;
+}
+.about-us div{
+    max-width:750px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-us div h2{
+    font-size:2.2em;
+    padding:5px;
+    background: #EDEDED;
+}
+#tag-mobile{
+    display:none;
+}
+.title-header{
+    display:flex;
+    align-items:center;
+    height:140px;
+}
+.title-header h1{
+    height:30%;
+}
+.title-header h1 div{
+    min-width:230px;
+    font-size: 34px;
+
+    margin-bottom: 30px;
+    height: 100%;
+    width:30%;
+    padding-right:30px;
+    text-align: right;
+    border-right:1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 /* portfolio */
 
 .portfolio{
+    background:white;
     padding:0;
-    height:450px;
+    overflow: auto;
 }
 p{
     margin-bottom:10px;
 }
 article#hg{
-    display:flex;
+    overflow: auto;
     height:auto;
-    justify-content:center;
+    margin:0 auto;
 }
 .title{
+    float:left;
     width:30%;
+    min-width:230px;
     margin-top:40px;
-    border-right:1px solid #333;
+    border-right:1px solid #999;
     padding-right:30px;
     padding-top:0px;
     text-align: right;
@@ -135,23 +179,21 @@ article#hg{
 
 }
 .portfolio-right{
+    float:left;
+    width:70%;
     margin-top:40px;
     margin-bottom:100px;
+
 }
-{
-    display:flex;
-    width:100%;
-}
+
 .problem,.solution{
     width:50%;
     max-width:550px;
-    min-width:330px;
     float:left;
     padding:0px 40px;
 }
 .problem{
 
-    min-width:320px;
     padding-bottom: 0px;
 }
 .solution{
@@ -180,51 +222,74 @@ h3{
 
     .title{
         width:30%;
-        min-width:370px;
-    }
-}
-@media (max-width: 1050px){
-    .title{
-        min-width:240px;
-    }
-    .problem,.solution{
-        min-width:260px;
-    }
-    .problem{
-        padding-right:15px;
-    }
-    .solution{
-        padding-left:15px;
-    }
 
+    }
 }
-@media (max-width: 800px){
-    .title{
-        margin-right:10px;
-        min-width:270px;
+
+@media (max-width: 900px){
+
+    .about-us div h2{
+        font-size:1.4em;
     }
     .problem,.solution{
         width:100%;
     }
-    .solution{
-        padding-left:40px;
-    }
     .solution h3{
         margin-top:40px;
     }
+    
+
+}
+@media (max-width: 800px){
+    .title{
+        width:230px;
+    }
+    .portfolio-right{
+        float:none;
+        width:auto;
+        overflow:auto;
+
+    }
+ 
 }
 @media (max-width: 580px){
+    #tag-mobile{
+        display:block;
+        width:180px;
+        text-align: right;
+    }
+    #tag-mobile span{
+        background: #EDEDED;
+        display:inline;
+        margin:5px 0px;
+    }
+    .about-us div h2,.about-us div p{
+        display:none;
+    }
     .portfolio{
-        height: 1100px;
+        width:100%;
     }
     article#hg{
-        flex-direction:column;
+        width:80%;
+        margin: 0 auto;
     }
     .title{
         height: auto;
-        min-width:270px;
-        width: 80%;
-        margin: 20px auto;
+
+        width:100%;
+        margin: 0 auto;
+    }
+    .portfolio-right{
+        padding-top:60px;
+        width:100%;
+
+    }
+    .problem,.solution{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .title-header h1 div{
+        width:100%;
     }
 }
 @media (max-width: 440px){
@@ -234,6 +299,7 @@ h3{
     #lead-text{
         line-height:45px;
         width:auto;
+        font-size:24px;
     }
     #sub-text{
         font-size:20px;
@@ -246,6 +312,12 @@ h3{
     .intro{
         text-align: right;
         padding:0 20px;
+    }
+}
+
+@media (max-width: 320px){
+    #lead-text{
+        font-size:18px;
     }
 }
 .btn{
@@ -544,9 +616,6 @@ footer .social a:hover{
 @media (max-width: 840px){
     section{
         padding: 80px 40px;
-    }
-    header, footer{
-        padding: 0 10px;
     }
     .splash{
 

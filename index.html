@@ -38,11 +38,17 @@
                 <a class="btn" href="#" data-scrollto="portfolio">work<i class="fa fa-angle-down"></i></a>
             </div>
         </section>
-
+        <div class="about-us">
+            <div>
+                <div id="tag-mobile"><span id="fl">Good design is</span><span id="sl">so much more than a</span><span id="tl">pretty face.</span></div>
+                <h2>Good design is so much more than a pretty face.</h2>
+                <p>We tailor-make sites for local businesses to convert <b>traffic</b> into <b>clients.</b></p>
+            </div>
+        </div>
 
         <section class="portfolio">
-
-            <article id="hg">
+           
+            <article id="hg" class="container">
 
                 <div class="title">
                     <h1>HUGH GORDON ARCHITECT</h1>
@@ -74,66 +80,8 @@
               
                 
             </article>
-        
+      
         </section>
-<!-- 
-        <section class="overview">
-            <div class="container blocks">
-                <div>
-                    <i class="fa fa-bolt"></i>
-                    <h2>Higher rankings</h2>
-                    <p>The first spot in a Google search nets over <span class="bold-text">48%</span> of the clicks.</p>
-                </div>
-                 <div>
-                    <i class="fa fa-desktop"></i>
-                    <h2>Professional</h2>
-                    <p>My work is personal and professional, ensuring consistent communication with my clients through the design process.</p>
-                </div>
-                <div>
-                    <i class="fa fa-usd"></i>
-                    <h2>Affordable</h2>
-                    <p>Working as a freelance developer allows me to utilise my time efficiently, saving you the time and expenses of engaging a larger agency.</p>
-                </div>
-               
-            </div>
-        </section>
-
-        <section class="about greybg">
-            <div class="container">
-              <img id="laptop" src="images/macbook-pro.png" alt="Laptop">
-                <div>
-                    <h1 style="margin-bottom:70px;">Let's make something great</h1>
-                    <ul>
-                        <li>
-                            <i class="fa fa-home"></i>
-                            <h3>for small business.</h3>
-                            <p>The first spot in a Google search nets over <span class="bold-text">48%</span> of the clicks. 
-                            Give your business the website it deserves, a <span class="bold-text">search engine optimised</span> web presence that will attract clients <b>organically.</b></p>
-                        </li>
-                        <li>
-                            <i class="fa fa-desktop"></i>
-                            <h3>for individuals.</h3>
-                            <p>I create <span class="bold-text">responsive designs</span>, ensuring that your new website looks great on <span class="bold-text">every device.</span> I use the latest technologies to make designs i'm proud of.</p>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="components">
-          <div class="container">
-            <h1>What I do best</h1>
-            <p>
-            <ul class="package">
-              <li class="component"></i><i class="fa fa-check checkmark"></i> <b>Content Management Systems</b> Allowing you to log in to your own site and edit the site yourself - should I face an untimely death.</li>
-              <li class="component"></i><i class="fa fa-check checkmark"></i> <b>Design revisions</b> Seemed like a good idea at the time? Been there, no worries. You get up to three free design revisions to change your site - on the house.</li>
-              <li class="component"></i><i class="fa fa-check checkmark"></i> <b>SEO (Search Engine Optimisation )</b> Optimising your site for Google search rankings</li>
-              <li class="component"></i><i class="fa fa-check checkmark"></i> <b>Hosting/Domains</b> Handling all the technical stuff. Domain names, Hosting, Email accounts.</li>
-              <li class="component"></i><i class="fa fa-check checkmark"></i> <b>Meeting to discuss project goals</b> Ensuring that the client is entirely happy with what the final product will be.</li>
-            </ul>
-            </p>
-          </div>
-        </section> -->
 
         <!-- THE CONTACT  -->
           <section class="contact">
@@ -147,7 +95,7 @@
     				Grid.init();
     			});
 
-                var offset = $('.portfolio').offset().top;
+                var offset = $('.about-us').offset().top;
                 var navbar = $('header');
                 var navbar_items = $('.logo,nav ul li a,header .toggle-menu');
                 $(document).scroll(function() {
