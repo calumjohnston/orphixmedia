@@ -111,7 +111,7 @@ img{
 header{
     animation: 1s ease-out 0s 1 fadeIn;
     -webkit-animation-delay: 500ms; /* Safari 4.0 - 8.0 */
-    animation-delay: 200ms;
+    animation-delay: 400ms;
     transform:translateY(-100%);
     animation-fill-mode: forwards;
 }
@@ -132,7 +132,12 @@ section{
     padding: 75px 20px;
 }
 .lead-container{
+    
     animation: 800ms ease-out 0s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+    transform:translateX(-30%);
+    animation-delay: 300ms;
+    opacity:0;
     margin: 0 auto;
     width: 430px;
     border-right: 1px dotted rgba(255,255,255,0.7);
