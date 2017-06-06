@@ -105,6 +105,11 @@ section{
     width: 430px;
     border-right: 1px dotted rgba(255,255,255,0.7);
     padding-right: 30px;
+    cursor: default;
+    transition:all 400ms ease;
+}
+.lead-container:hover{
+    transform:scale(1.05);
 }
 
 /*About us*/
