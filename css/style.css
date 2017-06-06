@@ -647,16 +647,7 @@ footer .social a:hover{
     section{
         padding: 80px 40px;
     }
-    .splash{
-
-        padding: 150px 10px 80px 10px;
-        text-align: left;
-    }
-    .splash .container{
-        position: relative;
-        top: 0;
-        transform: none;
-    }
+    
     .splash .container h1,h2{
         padding: 0px 0px;
     }
