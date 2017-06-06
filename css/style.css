@@ -14,7 +14,20 @@
   0%   { transform: rotate(150deg); }
   100% { transform: rotate(330deg); }
 }
-
+@keyframes slideInFromLeft {
+  0% {
+    opacity:0;
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(-15%);
+    opacity:0.5;
+  }
+  100% {
+    opacity:1;
+    transform: translateX(0);
+  }
+}
 /* End Animations */
 
 /* Resets, Clears & Defaults */
@@ -101,16 +114,15 @@ section{
     padding: 75px 20px;
 }
 .lead-container{
+    animation: 800ms ease-out 0s 1 slideInFromLeft;
     margin: 0 auto;
     width: 430px;
     border-right: 1px dotted rgba(255,255,255,0.7);
     padding-right: 30px;
     cursor: default;
-    transition:all 400ms ease;
 }
-.lead-container:hover{
-    transform:scale(1.05);
-}
+
+
 
 /*About us*/
 .about-us{
