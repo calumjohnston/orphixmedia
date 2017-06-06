@@ -100,6 +100,12 @@ img{
 section{
     padding: 75px 20px;
 }
+.lead-container{
+    margin: 0 auto;
+    width: 430px;
+    border-right: 1px dotted rgba(255,255,255,0.7);
+    padding-right: 30px;
+}
 
 /*About us*/
 .about-us{
@@ -312,32 +318,36 @@ h3{
         width:100%;
     }
 }
-@media (max-width: 440px){
-    .splash{
-        height:90vh!important;
+@media (max-width: 490px){
+    .lead-container{
+        width:300px;
+        margin-top:50px;
+        text-align: right;
     }
     #lead-text{
-        line-height:45px;
+        line-height:35px;
         width:auto;
-        font-size:24px;
+        font-size:26px;
     }
     #sub-text{
-        font-size:20px;
+        font-size:18px;
         width:auto;
     }
     .splash .container a{
-        margin:0 auto;
-        margin-right:20px;
+        margin:0;
     }
-    .intro{
-        text-align: right;
-        padding:0 20px;
-    }
+
 }
 
-@media (max-width: 320px){
+@media (max-width: 340px){
+    .lead-container{
+        width:240px;
+    }
     #lead-text{
-        font-size:18px;
+        font-size:28px;
+    }
+    #sub-text{
+        font-size:16px;
     }
 }
 .btn{
