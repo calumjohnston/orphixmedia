@@ -788,6 +788,7 @@ footer .social a:hover{
     }
     header nav.visible{
         left: 0px;
+        height: 100vh;
     }
     header nav ul li{
         display: block;
