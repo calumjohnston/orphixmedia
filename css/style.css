@@ -8,11 +8,11 @@
 
 @keyframes spin {
   0%   { transform: rotate(30deg); }
-  100% { transform: rotate(210deg); }
+  100% { transform: rotate(160deg); }
 }
 @keyframes spin2 {
-  0%   { transform: rotate(150deg); }
-  100% { transform: rotate(330deg); }
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(130deg); }
 }
 @keyframes slideInFromLeft {
   0% {
@@ -68,8 +68,8 @@ h1, h2, h3, p{
 }
 
 h1{
-    font-size: 40px;
-    line-height: 46px;
+    font-size: 48px;
+    line-height: 48px;
     font-weight: 300;
 
 }
@@ -116,7 +116,7 @@ header{
     animation-fill-mode: forwards;
 }
 #lead-text{
-    width:400px;
+    width:440px;
     text-align:right;
 }
 .splash .container h2{
@@ -132,26 +132,46 @@ section{
     padding: 75px 20px;
 }
 .lead-container{
-    
     animation: 800ms ease-out 0s 1 slideInFromLeft;
     animation-fill-mode: forwards;
     transform:translateX(-30%);
     animation-delay: 300ms;
     opacity:0;
     margin: 0 auto;
-    width: 430px;
-    border-right: 1px dotted rgba(255,255,255,0.7);
+    width: 470px;
+    border-right: 5px solid rgba(255,255,255,0.12);
     padding-right: 30px;
     cursor: default;
 }
 
+.case-study-header{
+    width: auto;
+    border-bottom: none;
+    font-size: 5.4rem;
+    line-height: unset;
+    padding: 0.4em 0.5rem 2.5rem 0;
+    font-weight: 400;
+    color: #e0e0e0;
+    text-transform: uppercase;
+    text-align: left;
+}
 
-
+.ethos{
+    padding-top: 9em;
+    height: 55vh;
+    min-height: 400px;
+}
+.contact{
+    height:50vh;
+    min-height: 400px;
+    padding: 0;
+    padding-top: 40px;
+}
 /*About us*/
 .about-us{
     display:flex;
     align-items:center;
-    height:600px;
+    height:500px;
 }
 .about-us div{
     max-width:1100px;
@@ -160,6 +180,7 @@ section{
 }
 .about-us div h2{
     font-size:4.2em;
+    width: 1100px;
     line-height:1.3em;
     background: #EDEDED;
     padding:5px 20px 10px 20px;
@@ -258,15 +279,6 @@ h3{
     width:75px;
     line-height:18px;
     padding-bottom: 3px;
-}
-.contact{
-    text-align: right;
-    font-size:22px;
-    padding:0;
-    margin:20px;
-}
-.contact h1{
-    margin:20px;
 }
 
 @media (max-width: 1450px){
@@ -465,8 +477,8 @@ header .toggle-menu{
 }
 
 .splash{
-    background: linear-gradient(to right, #3a7bd5, #00d2ff);
-    height: 100vh;
+    background: linear-gradient(to right, #ce7272, #8d6bd0);
+    height: 70vh;
     overflow: hidden;
     position: relative;
 }
@@ -500,7 +512,8 @@ header .toggle-menu{
 }
 .splash h2{
     margin-bottom: 40px;
-    color:#e1e1e1;
+    opacity: 0.6;
+    font-size:22px;
 }
 
 .overview{
