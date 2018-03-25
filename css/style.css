@@ -229,6 +229,42 @@ article p {
     background-attachment: fixed;
     height:80vh;
 }
+.icon{
+    font-size:2rem;
+    color:#b66f94;
+    margin-right:15px
+}
+#package-list li{
+    font-weight:300;
+}
+/* Features */
+.features{
+    overflow:hidden;
+}
+.feature{
+    width:25%;
+    float:left;
+    padding:2em
+}
+.feature-title{
+    font-weight:600;
+}
+#contact-div{
+    padding:2em;
+    width:auto;
+    overflow:hidden;
+    background:#fff;
+    margin:0 auto;
+}
+#contact-div h3{
+    width:100%;
+    border-bottom:none;
+    font-weight:800;
+    font-size:3em
+}
+#contact-div p{
+    font-size:1.4em;
+}
 /*About us*/
 .about-us{
     display:flex;
