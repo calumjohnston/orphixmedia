@@ -4,20 +4,22 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
   <loc>http://orphixmedia.com/</loc>
-  <lastmod>2018-03-25T05:11:53+00:00</lastmod>
+  <lastmod>2018-03-25T05:26:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://orphixmedia.com/about-us/</loc>
-  <lastmod>2018-03-25T05:11:53+00:00</lastmod>
+  <lastmod>2018-03-25T05:26:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://orphixmedia.com/blog/</loc>
-  <lastmod>2018-03-25T05:11:53+00:00</lastmod>
+  <loc>http://orphixmedia.com/blog/tips-for-improving-your-website/</loc>
+  <lastmod>2018-03-25T05:26:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
