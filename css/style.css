@@ -45,7 +45,9 @@
 *, *:after, *:before {
     box-sizing: border-box;
 }
-
+html{
+    overflow-y:auto;
+}
 body, input, textarea{
     padding: 0; margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -813,12 +815,19 @@ footer .social a:hover{
     .pricing h2{
         margin-bottom: 40px;
     }
+    .case-study-header{
+        font-size: 3.4rem;
+        line-height: 55px;
+    }
+    .ethos{
+        padding-top:unset;
+    }
+    section{
+        padding: 10px 30px;
+    }
 }
 
 @media (max-width: 600px){
-    section{
-        padding: 40px 10px;
-    }
     .splash{
         padding: 100px 10px 40px 10px;
     }
