@@ -860,6 +860,9 @@ footer .social a:hover{
     .pricing h2{
         margin-bottom: 40px;
     }
+    #laptop-glow{
+        height:30vh;
+    }
     #laptop-desk{
         height:unset!important;
         padding:2em 1em!important;
