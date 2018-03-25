@@ -384,6 +384,7 @@ h3{
     padding-bottom: 3px;
 }
 
+
 @media (max-width: 1450px){
 
     .title{
@@ -407,7 +408,9 @@ h3{
     .solution h3{
         margin-top:40px;
     }
-    
+    .demo-div,.demo-img{
+        width:100%!important;
+    }
 
 }
 @media (max-width: 800px){
