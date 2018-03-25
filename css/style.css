@@ -420,6 +420,15 @@ h3{
         overflow:auto;
 
     }
+    .lead-container{
+        width:unset!important;
+    }
+    .case-study-header{
+        font-size:1.4em!important;
+    }
+    .feature{
+        width:100%;
+    }
  
 }
 @media (max-width: 580px){
@@ -851,10 +860,31 @@ footer .social a:hover{
     .pricing h2{
         margin-bottom: 40px;
     }
+    #laptop-desk{
+        height:unset!important;
+        padding:2em 1em!important;
+    }
+    #contact-div h3{
+        font-size:2em;
+        line-height:45px;
+    }
+    #contact-div h4{
+        font-size:1.2em!important;
+        line-height:24px;
+    }
+    #contact-div p{
+        font-size:1em;
+    }
+    #contact-div .icon{
+        float:left;
+    }
     .case-study-header{
         font-size: 1.4rem;
-        line-height: 55px;
+        line-height: 35px;
         color:#8c8c8c
+    }
+    .package li{
+        margin-bottom:1.4em
     }
     .ethos{
         padding-top:unset;
