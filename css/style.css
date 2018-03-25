@@ -155,7 +155,7 @@ section{
     line-height: unset;
     padding: 0.4em 0.5rem 1.5rem 0;
     font-weight: 400;
-    color: #e0e0e0;
+    color: #d6d6d6;
     text-transform: uppercase;
     text-align: left;
 }
@@ -212,6 +212,20 @@ article p {
     min-height: 400px;
     padding: 0;
     padding-top: 40px;
+}
+#laptop-glow{
+    background:url("../images/laptop-glow.jpg");
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:80vh;
+}
+#laptop-desk{
+    background:url("../images/laptop-desk.jpg");
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:80vh;
 }
 /*About us*/
 .about-us{

@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="description" itemprop="description" content="We're Orphix Media, a Canberra based web design studio. We design, develop, and optimise websites for local businesses in Canberra - increasing clicks, traffic, and driving clients." />
         <meta name="keywords" itemprop="keywords" content="Canberra based web design, web design in canberra, canberra web designer, web design canberra, freelance web design, web designer, web developer, custom websites, custom web design" />
-        <title>Orphix Media | Website Design Canberra</title>
+        <title>Orphix Media | Website Design in Canberra</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -22,6 +22,7 @@
                 <i class="fa fa-bars toggle-menu"></i>
                 <nav>
                     <ul>
+                        <li><a href="/about-us" >About Us</a></li>
                         <li><a href="/blog" >Blog</a></li>
                         <li><a href="mailto:orphixmedia@gmail.com" >Contact us</a></li>
                     </ul>
@@ -44,6 +45,8 @@
              <p><b>Thoughtfully designed</b> approaches to the modern web landscape.</p>
              <p>Inspiring <b>confidence</b> in both business and consumer; we deliver websites that <b>demand attention.</b></p>
       </section>
+
+      <section id='laptop-glow' style="padding:0;"></section>
 
      <section class="portfolio">
             
@@ -74,12 +77,22 @@
             </article>
         </section>
 
-        <section class="splash" style="height:45vh;min-height: 400px;">
+        <section id='laptop-desk' style="padding:0;"></section>
+
+        <section class="upsell" style="padding:1em 0;background: #f5f5f5;padding: 1em 0;color: #616161;font-size: 16px;">
+            <div style="max-width:1080px;margin:0 auto;">
+                <h3 class="case-study-header" style="font-size:2.4em;color:#5f5f5f;margin:0;">WHO WE ARE</h3>
+            <p>Orphix Media are a Canberra based Web Design agency, focusing on delivering effective websites for local Canberra 
+                businesses, increasing traffic and employing techniques to turn this traffic directly into clients.</p>
+            </div>   
+        </section>
+
+        <section style="background: #464646;padding: 2em 0;">
             <div class="container intro">
 
                 <div>
-                    <h3 class="case-study-header" style="opacity:0.6"><a style='color:unset;text-align:left;display:inline;line-height:95px;' href="mailto:orphixmedia@gmail.com" >GET IN CONTACT<br><span style="font-weight:800;">orphixmedia@gmail.com</span></a></h3>
-               </div>
+                    <h3 class="case-study-header" style="opacity:0.6;font-size:2.4em;margin:0"><a style='color:unset;text-align:left;display:inline;line-height:45px;' href="mailto:orphixmedia@gmail.com" >GET IN CONTACT<br><span style="font-weight:800;">orphixmedia@gmail.com</span></a></h3>
+                </div>
 
             </div>
         </section>
@@ -87,29 +100,35 @@
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="js/grid.js"></script>
         <script src="js/script.js"></script>
-    		<script>
+        <script>
     			$(function() {
     				Grid.init();
-    			});
+                });
+                
+                var offset = $('.ethos').offset().top;
+                var navbar = $('header');
+                var navbar_items = $('.logo,nav ul li a,header .toggle-menu');
 
-                    var offset = $('.ethos').offset().top;
-                    var navbar = $('header');
-                    var navbar_items = $('.logo,nav ul li a,header .toggle-menu');
-                    $(document).scroll(function() {
-                        position = $(this).scrollTop();
-                      if (position < offset){
+                function navBarColor(){
+                   
+                    console.log("hello");
+                    position = $(this).scrollTop();
+                    if (position < offset) {
                         navbar.css('background', 'transparent');
                         navbar.css('border-bottom', 'none');
                         navbar_items.css('color','#fff');
-
                     }
-                      else
-                      {
+                    else {
                         navbar.css('background', '#fff');
-                        navbar.css('border-bottom', '1px solid #f2f2f2');
+                        navbar.css('border-bottom', '1px solid #ececec');
                         navbar_items.css('color','#000');
                     }
-                    });
+                    ;
+                }
+
+                navBarColor();
+                window.addEventListener('scroll', navBarColor);
+                
 
     		</script>
 
