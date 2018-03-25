@@ -532,7 +532,7 @@ header nav ul li{
 header nav ul li a{
     display: inline-block;
     padding: 15px 20px;
-    color: white;
+    color: #fff!important;
     transition: 200ms;
 }
 header nav ul li a:hover, header nav ul li a.active{
@@ -816,14 +816,15 @@ footer .social a:hover{
         margin-bottom: 40px;
     }
     .case-study-header{
-        font-size: 3.4rem;
+        font-size: 1.4rem;
         line-height: 55px;
+        color:#8c8c8c
     }
     .ethos{
         padding-top:unset;
     }
     section{
-        padding: 10px 30px;
+        padding: 10px 30px!important;
     }
 }
 
