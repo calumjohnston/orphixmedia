@@ -49,7 +49,7 @@
                 <article>
                         <h4 style='font-size:2em;margin-bottom:1em'>1. Lose the borders</h4>
                         <p>Next time you add a border to an element, ask yourself if your really need it.</p>
-                        <p>Often times a box shadow, like the one from the first tip, is enough to give you the visual separation you're looking for.</p>
+                        <p>Often times a box shadow is enough to give you the visual separation you're looking for.</p>
                         <p style="margin-bottom:3em"></p>
                         
                         <p class="code">border:1px solid #999;</p>
@@ -65,8 +65,29 @@
                         </div>
         
                     </article>
+
+                    <article>
+                            <h4 style='font-size:2em;margin-bottom:1em'>2. The Subtle Gradient</h4>
+                            <p>If the first thing that comes to mind when you hear 'gradient' is bright red and yellow Microsoft Word Art, this ones for you.</p>
+                            <p>Take a look at <a style="border-bottom:1px dashed #999;" href="http://stripe.com">Stripe.com</a>. Stripe's front-end design is highly regarded in the web design industry, and one of the things that really sets them apart is their use of subtle gradients. </p>
+                            <p>A subtle gradient is simply a gradient that transitions between two colours that aren't too far apart to begin with.</p>
+                            <p>A great resource for finding and creating subtle gradients is: <a style="border-bottom:1px dashed #999;" href="http://uigradients.com">uigradients.com.</a></p>Not a plug!</p>
+                            <p style="margin-bottom:3em"></p>
+            
+                            <p class="code">Stripe.com's usage of the subtle<br>gradient.</p>   
+                            <div style="margin-top:1
+                            em;">
+                                <img class="demo-img" style="max-width:800px;box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);" src="../../images/stripe.jpg" alt="Stripe's use of the 'subtle gradient' effect.">
+                            </div>
+                            <br>
+                            <p>Next time you're adding a block of colour to your design, try adding the property:</p>
+                            <p class="code">background: #36D1DC; /* Fallback */<br>
+                            background: -webkit-linear-gradient(to top, #5B86E5, #36D1DC);<br>
+                            background: linear-gradient(to top, #5B86E5, #36D1DC); <br>
+                            </p>
+                        </article>
             <article style="margin-bottom:8em;">
-                <h4 style='font-size:2em;margin-bottom:1em'>2. The Soft Box-Shadow</h4>
+                <h4 style='font-size:2em;margin-bottom:1em'>3. The Soft Box-Shadow</h4>
                 <p>If I could only give one tip it would be this - Sort out your box-shadow. The purpose of a box-shadow property is to suggest depth in an otherwise 2D design </p>
                 <p style="margin-bottom:2em">Though not all box-shadows are made equal. Compare the two following box-shadow properties:</p>
                 <p class="code">box-shadow:0px 0px 12px #000;</p>
@@ -75,27 +96,6 @@
                 <div class="demo-div" style="height:200px;width:250px;box-shadow: 0px 2px 12px rgba(0,0,0,0.27)"></div>
 
                 <p style="margin-top:2em;">Toning down the color to a ~27% black, and adding a 2px vertical offset makes all the difference.</p>
-            </article>
-
-            <article>
-                <h4 style='font-size:2em;margin-bottom:1em'>3. The Subtle Gradient</h4>
-                <p>If the first thing that comes to mind when you hear 'gradient' is bright red and yellow Microsoft Word Art, this ones for you.</p>
-                <p>Take a look at <a style="border-bottom:1px dashed #999;" href="http://stripe.com">Stripe.com</a>. Stripe's front-end design is highly regarded in the web design industry, and one of the things that really sets them apart is their use of subtle gradients. </p>
-                <p>A subtle gradient is simply a gradient that transitions between two colours that aren't too far apart to begin with.</p>
-                <p>A great resource for finding and creating subtle gradients is: <a style="border-bottom:1px dashed #999;" href="http://uigradients.com">uigradients.com.</a></p>Not a plug!</p>
-                <p style="margin-bottom:3em"></p>
-
-                <p class="code">Stripe.com's usage of the subtle<br>gradient.</p>   
-                <div style="margin-top:1
-                em;">
-                    <img class="demo-img" style="max-width:800px;box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);" src="../../images/stripe.jpg" alt="Stripe's use of the 'subtle gradient' effect.">
-                </div>
-                <br>
-                <p>Next time you're adding a block of colour to your design, try adding the property:</p>
-                <p class="code">background: #36D1DC; /* Fallback */<br>
-                background: -webkit-linear-gradient(to top, #5B86E5, #36D1DC);<br>
-                background: linear-gradient(to top, #5B86E5, #36D1DC); <br>
-                </p>
             </article>
 
             <article>
