@@ -580,7 +580,7 @@ header nav ul li{
 header nav ul li a{
     display: inline-block;
     padding: 15px 20px;
-    color: #fff!important;
+    color: #fff;
     transition: 200ms;
 }
 header nav ul li a:hover, header nav ul li a.active{
