@@ -68,7 +68,12 @@ h1, h2, h3, p{
     position: relative;
     z-index: 6;
 }
-
+p.code{
+    font-family:monospace;
+    color:#888;
+    padding-left:10px;
+    border-left:3px solid #dcdcdc;
+}
 h1{
     font-size: 48px;
     line-height: 48px;
