@@ -224,14 +224,14 @@ article p {
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
-    height:80vh;
+    height:40vh;
 }
 #laptop-desk{
     background:url("../images/laptop-desk.jpg");
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
-    height:80vh;
+    height:40vh;
 }
 .icon{
     font-size:2rem;
