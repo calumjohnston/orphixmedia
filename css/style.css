@@ -161,7 +161,7 @@ section{
     line-height: unset;
     padding: 0.4em 0.5rem 1.5rem 0;
     font-weight: 400;
-    color: #d6d6d6;
+    color: #505050;
     text-transform: uppercase;
     text-align: left;
 }
@@ -236,10 +236,13 @@ article p {
 .icon{
     font-size:2rem;
     color:#b66f94;
-    margin-right:15px
+    margin-right:15px;
+    width: 1.2em;
+    display: inline-block;
 }
-#package-list li{
-    font-weight:300;
+
+.package-list li{
+    padding:0.5em 0;
 }
 /* Features */
 .features{
@@ -255,7 +258,7 @@ article p {
 }
 #contact-div{
     padding:2em;
-    width:auto;
+    width:35em;
     overflow:hidden;
     background:#fff;
     margin:0 auto;
@@ -263,8 +266,10 @@ article p {
 #contact-div h3{
     width:100%;
     border-bottom:none;
+    line-height: 1.25em;
     font-weight:800;
-    font-size:3em
+    font-size:3em;
+    margin-bottom:0
 }
 #contact-div p{
     font-size:1.4em;
@@ -381,9 +386,7 @@ article#hg{
 
 h3{
     font-weight:400;
-    border-bottom: 1px dotted #000;
     text-decoration: none;
-    width:75px;
     line-height:18px;
     padding-bottom: 3px;
 }
@@ -887,7 +890,7 @@ footer .social a:hover{
     .case-study-header{
         font-size: 1.4rem;
         line-height: 35px;
-        color:#8c8c8c
+        color:#505050
     }
     .package li{
         margin-bottom:1.4em

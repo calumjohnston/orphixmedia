@@ -1,3 +1,4 @@
+
 jQuery.extend(jQuery.easing,{
     easeInOutExpo: function(x, t, b, c, d){
         if (t==0) return b;
@@ -23,4 +24,24 @@ $(document).ready(function(){
         $('.pricing > div > div:nth-of-type(3)').insertAfter($('.pricing > div > div:nth-of-type(1)'));
     }
     
+});
+
+var myform = $("form#myform");
+myform.submit(function(event){
+	event.preventDefault();
+
+  // Change to your service ID, or keep using the default service
+  var service_id = "default_service";
+  var template_id = "template_ETEAAIDi";
+
+  myform.find("button").text("Sending...");
+  emailjs.sendForm(service_id,template_id,"myform")
+  	.then(function(){ 
+    	alert("Sent!");
+       myform.find("button").text("Send");
+    }, function(err) {
+       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+       myform.find("button").text("Send");
+    });
+  return false;
 });
