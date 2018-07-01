@@ -418,7 +418,10 @@ h3{
     .demo-div,.demo-img{
         width:100%!important;
     }
-
+    .package-list{
+        width:100%!important;
+        margin:0!important;
+    }
 }
 @media (max-width: 800px){
     .title{
@@ -871,7 +874,7 @@ footer .social a:hover{
     }
     #laptop-desk{
         height:unset!important;
-        padding:2em 1em!important;
+        padding:0!important;
     }
     #contact-div h3{
         font-size:2em;
