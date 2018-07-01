@@ -35,7 +35,7 @@ myform.submit(function(event){
   var template_id = "template_ETEAAIDi";
 
   myform.find("button").text("Sending...");
-  emailjs.sendForm(service_id,template_id,"myform")
+  emailjs.sendForm(service_id,template_id,"form#myform")
   	.then(function(){ 
     	alert("Sent!");
        myform.find("button").text("Send");

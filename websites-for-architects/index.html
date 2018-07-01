@@ -18,85 +18,6 @@
     <link rel="stylesheet" type="text/css" href="../css/component.css" />
     <link href="../css/architect.css" rel="stylesheet">
     <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "NewsArticle",
-            "headline": "Open-source framework for publishing content",
-            "datePublished": "2015-10-07T12:02:41Z",
-            "image": [
-                "logo.jpg"
-            ]
-        }
-    </script>
-
-    <style amp-boilerplate>
-        body {
-            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            animation: -amp-start 8s steps(1, end) 0s 1 normal both
-        }
-
-        @-webkit-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-            to {
-                visibility: visible
-            }
-        }
-
-        @-moz-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-            to {
-                visibility: visible
-            }
-        }
-
-        @-ms-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-            to {
-                visibility: visible
-            }
-        }
-
-        @-o-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-            to {
-                visibility: visible
-            }
-        }
-
-        @keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-            to {
-                visibility: visible
-            }
-        }
-    </style>
-    <noscript>
-        <style amp-boilerplate>
-            body {
-                -webkit-animation: none;
-                -moz-animation: none;
-                -ms-animation: none;
-                animation: none
-            }
-        </style>
-    </noscript>
     <script src="../js/modernizr.custom.js"></script>
 </head>
 
@@ -208,11 +129,8 @@
                     <li><i class="icon ion-ios-world" style="color:#666"></i>Domain Name (.com.au)</li>
                 </ul>
                 <ul class="package-list" style="display:inline-block;width:50%;list-style-type:none;padding-left:0;margin-bottom:2em">
-                    <li><i class="icon ion-arrow-graph-up-right" style="color:#666"></i>On-Page <b>SEO</b> + 30 minute strategy
-                        consultation</li>
-                    <li><i class="icon ion-document-text" style="color:#666"></i>Content modifications to maximise SEO benefits</li>
-                    <li><i class="icon ion-help-buoy" style="color:#666"></i>30 Minute <b>CMS Tutorial</b> - Learn how to add
-                        your own content</li>
+                    <li><i class="icon ion-arrow-graph-up-right" style="color:#666"></i>On-Page <b>SEO</b> + SEO strategy consultation</li>
+                    <li><i class="icon ion-document-text" style="color:#666"></i>Modifications to your existing content - Improving the SEO ranking factors.</li>
                 </ul>
 
             </div>
@@ -227,17 +145,17 @@
                 <h3>Do you need a new website?</h3>
                 <h4 style="font-size:1.2rem;color:#666;font-weight:300">Let us take a look at your existing site and offer some obligation free suggestions.</h4>
                 <form id="myform" method="post" style='margin:0 auto;padding:1em;'>
-                        <label>Your Email Address</label>
-                        <input style='display:block;width:100%' type="text" name="email" />
-                        <label>Your Website</label>
-                        <input style='display:block;width:100%' type="text" name="website" />
-                        <label>Optional Message</label>
-                        <textarea style='display:block;width:100%' type="text" name="message_html" ></textarea>
-                        <button style='width:100%;padding:1.3em 0;margin-top:1em;background:#3e8eb5;color:#fff;border:none;border-radius:2px;'>
-                        Send
-                        </button>
-                        <p style='font-size:1em;text-align:center;width:100%'>We'll get back to you via email.</p>
-                        </form>
+                    <label>Your Email Address</label>
+                    <input style='display:block;width:100%' type="text" name="email" />
+                    <label>Your Website</label>
+                    <input style='display:block;width:100%' type="text" name="website" />
+                    <label>Optional Message</label>
+                    <textarea style='display:block;width:100%' type="text" name="message_html" ></textarea>
+                    <button style='width:100%;padding:1.3em 0;margin-top:1em;background:#3e8eb5;color:#fff;border:none;border-radius:2px;'>
+                    Send
+                    </button>
+                    <p style='font-size:1em;text-align:center;width:100%'>We'll get back to you via email.</p>
+                    </form>
             </div>
 
         </div>
@@ -261,6 +179,12 @@
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="../js/grid.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_rI248ktiLtblnOZ3PV5Bu");
+       })();
+    </script>
     <script src="../js/script.js"></script>
     <script>
         $(function () {
@@ -289,12 +213,7 @@
         navBarColor();
         window.addEventListener('scroll', navBarColor);
     </script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user_rI248ktiLtblnOZ3PV5Bu");
-       })();
-    </script>
+ 
 
 </body>
 
