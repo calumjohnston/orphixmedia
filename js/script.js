@@ -115,6 +115,7 @@ $('.analyse-btn').click(function (e) {
                         // Stop the loading bar
                         $('.bar').hide();
                         $('#analyser-loadingbar-title').hide();
+                        $('.lead-container h2, #lead-text').hide();
                         // Show the 'See Results page'
                         $('#analyser-results').show();
                     }, 3000);
