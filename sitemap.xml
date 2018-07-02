@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 
 <url>
-  <loc>http://orphixmedia.com/</loc>
+  <loc>https://orphixmedia.com/</loc>
   <lastmod>2018-03-25T12:40:17+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://orphixmedia.com/about-us/</loc>
+  <loc>https://orphixmedia.com/about-us/</loc>
   <lastmod>2018-03-25T12:40:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://orphixmedia.com/web-design-canberra/</loc>
+  <loc>https://orphixmedia.com/web-design-canberra/</loc>
   <lastmod>2018-03-25T12:40:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://orphixmedia.com/blog/tips-for-improving-your-website/</loc>
+  <loc>https://orphixmedia.com/blog/tips-for-improving-your-website/</loc>
   <lastmod>2018-03-25T12:40:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
