@@ -23,6 +23,7 @@ $(document).ready(function () {
             .then(function(){ 
             alert("Sent!");
             analyserForm.find("button").text("Send");
+            window.location.hash = 'submitted';
         }, function(err) {
             alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
             analyserForm.find("button").text("Send");
