@@ -163,6 +163,9 @@
     .lead-container h2{
         font-size:1.2em;
     }
+    #analyser-container{
+        width:100%!important;
+    }
 }
 @media(max-width:500px) {
     #lead-text{
