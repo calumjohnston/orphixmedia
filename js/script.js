@@ -21,7 +21,7 @@ $(document).ready(function () {
         analyserForm.find("button").text("Sending...");
         emailjs.sendForm(service_id,template_id,"form#analyser-form")
             .then(function(){ 
-            fbq('track','lead');
+            fbq('track','Lead');
             analyserForm.find("button").text("Send");
             window.location.hash = 'submitted';
         }, function(err) {
