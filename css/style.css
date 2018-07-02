@@ -625,6 +625,7 @@ header .toggle-menu{
     color:#eee;
     position: relative;
     z-index: 5;
+    margin-top:9em;
 }
 .splash .container h1 .title-bold{
   font-weight:600;
