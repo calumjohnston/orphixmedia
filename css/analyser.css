@@ -1,0 +1,152 @@
+.splash {
+    background: #D36049;
+}
+
+#lead-text {
+    font-weight: 600;
+}
+
+.lead-container {
+    border: none;
+    margin-top: 5em;
+}
+
+#analyser {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.analyse-btn {
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    bottom: 0.5em;
+    width: 8em;
+    color: #fff;
+    background: #D36049
+}
+
+.analyser-send {
+    cursor: pointer;
+    width: 100%;
+    padding: 1em 0;
+    margin-top: 1em;
+    background: #3e8eb5;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 2px;
+}
+
+.analyser-send:hover{
+    background: #3083AC;
+}
+
+.analyse-btn:hover {
+    background: #E95B3F;
+    cursor: pointer;
+}
+
+#analyser-loadingbar-value {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.8em;
+    font-weight: 600
+}
+#analyser-loadingbar-title{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+/* Progress bar */
+
+.bar {
+    /**
+     * The loading bar is centered both vertically and horizontally using
+     * top: 50%; and left: 50%; and then pulling it back using negative margins.
+     */
+    position: relative;
+    height: 30px;
+    width: 100%;
+    margin-top: -10px;
+    /* half the height */
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(-45deg, #D36049 25%, rgba(255, 154, 26, 0) 25%, rgba(255, 154, 26, 0) 50%, #D36049 50%, #D36049 75%, rgba(255, 154, 26, 0) 75%);
+    background-color: #d3d3d3;
+    background-size: 50px 50px;
+    border: 1px solid #C65C46;
+    border-bottom-color: #C65C46;
+    -webkit-box-shadow: inset 0 10px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 10px 0 rgba(255, 255, 255, 0.2);
+    -webkit-animation: move 2s linear infinite;
+    -moz-animation: move 2s linear infinite;
+    -ms-animation: move 2s linear infinite;
+    animation: move 2s linear infinite;
+}
+
+/**
+ * The ::before element creates the darker box around the loading bar itself.
+ */
+
+.bar::before {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03), inset 0 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03), inset 0 1px 0 rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+/**
+ * Animate the stripes.
+ */
+
+@-webkit-keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+@-moz-keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+@-ms-keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}

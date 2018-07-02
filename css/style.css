@@ -138,7 +138,7 @@ header{
     margin-left:250px;
 }
 section{
-    padding: 75px 20px;
+    padding: 2em!important;
 }
 .lead-container{
     animation: 800ms ease-out 0s 1 slideInFromLeft;
@@ -149,7 +149,6 @@ section{
     margin: 0 auto;
     width: 470px;
     border-right: 5px solid rgba(255,255,255,0.12);
-    padding-right: 30px;
     cursor: default;
 }
 
@@ -580,7 +579,7 @@ header nav ul{
     margin: 0;
 }
 header nav ul li{
-    display: inline-block;
+    list-style:none;
     float: left;
 }
 header nav ul li a{
@@ -599,7 +598,8 @@ header .toggle-menu{
 
 .splash{
     background: linear-gradient(to right, #ce7272, #8d6bd0);
-    height: 70vh;
+    height: auto;
+    min-height: 60vh;
     overflow: hidden;
     position: relative;
 }
@@ -608,24 +608,22 @@ header .toggle-menu{
     display: block;
     position: absolute;
     top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
     transform: rotate(30deg);
-    animation: spin 60s infinite linear;
+    animation: spin 120s infinite linear;
 }
 .splash:before{
     content: "";
     display: block;
     position: absolute;
     top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
     transform: rotate(150deg);
-    animation: spin2 50s infinite linear;
+    animation: spin2 90s infinite linear;
 }
 .splash .container{
     color:#eee;
     position: relative;
-    top: 48%;
-    transform: translateY(-50%);
     z-index: 5;
 }
 .splash .container h1 .title-bold{
@@ -764,7 +762,7 @@ header .toggle-menu{
     margin-top: 7px;
 }
 .checkmark{
-  color: #33C1B4;!important;
+  color: #33C1B4!important;
   font-size:26px!important;
   background:none!important;
   margin-right:20px;
@@ -907,6 +905,15 @@ footer .social a:hover{
 }
 
 @media (max-width: 600px){
+    #analyser-loadingbar{
+        width:100%!important;
+        top:0!important;
+
+    }
+    #analyser-loadingbar-value{
+        margin-top:1.5em!important;
+        margin-bottom:1em!important;
+    }
     .splash{
         padding: 100px 10px 40px 10px;
     }
