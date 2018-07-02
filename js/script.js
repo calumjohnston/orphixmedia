@@ -13,15 +13,15 @@ $(document).ready(function () {
     var analyserForm = $("form#analyser-form");
     analyserForm.submit(function(event){
         event.preventDefault();
-    
+        fbq('track','Lead');
+
         // Change to your service ID, or keep using the default service
         var service_id = "default_service";
         var template_id = "analyser";
-    
         analyserForm.find("button").text("Sending...");
         emailjs.sendForm(service_id,template_id,"form#analyser-form")
             .then(function(){ 
-            fbq('track','Lead');
+            
             analyserForm.find("button").text("Send");
             window.location.hash = 'submitted';
         }, function(err) {
