@@ -210,7 +210,7 @@ article p {
   }
 .ethos{
     padding-top: 4em;
-    min-height: 350px;
+    height:auto;
 }
 .contact{
     height:50vh;
