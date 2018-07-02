@@ -5,7 +5,9 @@
 #lead-text {
     font-weight: 600;
 }
-
+.splash .container{
+    margin-top:5em;
+}
 .lead-container {
     border: none;
     margin-top: 5em;
@@ -148,5 +150,23 @@
     }
     100% {
         background-position: 50px 50px;
+    }
+}
+
+@media(max-width:840px) {
+    .splash{
+        padding:4em 2em!important;
+    }
+    .lead-container,.splash .container{
+        margin-top:3em;
+    }
+    .lead-container h2{
+        font-size:1.2em;
+    }
+}
+@media(max-width:500px) {
+    #lead-text{
+        font-size: 2.5em;
+        line-height: 1.2em;
     }
 }
