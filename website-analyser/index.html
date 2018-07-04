@@ -20,31 +20,43 @@
     <script src="../js/modernizr.custom.js"></script>
     <!-- Facebook Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1639116172834832');
-    fbq('track', 'PageView');
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1639116172834832');
+        fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1639116172834832&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1639116172834832&ev=PageView&noscript=1"
+        /></noscript>
     <!-- End Facebook Pixel Code -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121799577-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-121799577-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121799577-1');
     </script>
-    
+
 </head>
 
 <body>
@@ -57,9 +69,14 @@
             <i class="fa fa-bars toggle-menu"></i>
             <nav>
                 <ul>
+
+                    <li>
+                        <a href="#" style='font-weight:bold;'>
+                            <ion-icon name="call" style='position:relative;top: 0.3em;color:#fff;font-size:1.4em;margin-right:0.5em'></ion-icon>(02) 6172 1499</a>
+                    </li>
                     <li><a href="/">Home</a></li>
                     <li><a href="../blog/tips-for-improving-your-website">Blog</a></li>
-                    <li><a href="mailto:calum.johnston.web@gmail.com">Contact us</a></li>
+                    <li><a href="mailto:info@orphixmedia.com">Contact us</a></li>
                 </ul>
             </nav>
         </div>
@@ -78,7 +95,7 @@
                     <input type="text" id="analyser" placeholder='Your website URL' autofocus>
                     <button id='analyse-btn' class="analyse-btn">Analyse</button>
                 </div>
-                                  
+
                 <div id='analyser-loadingbar' style='top:2em;position:relative;width:55%;margin:0 auto;display:none'>
                     <div class="bar"></div>
                     <div id='analyser-loadingbar-title'></div>
@@ -91,11 +108,12 @@
                     <form id="analyser-form" method="post" style='max-width:30em;margin:0 auto;padding:1em;'>
                         <label>Your Email Address</label>
                         <form id="analyser-form" method="post">
-                        <input type="text" name="email" style='display:block;width:100%;border:none;border-radius:4px;padding:1.1em 1em' placeholder='Email Address'/>
-                        <input id='website-form-input' name='website' type="hidden" name="website" />
-                        <button class='analyser-send'>See Results</button>
-                        <p style='font-size:1em;text-align:center;width:100%'>We'll contact you for a completely <b>free</b> consultation.</p>
-                    </form>
+                            <input type="text" name="email" style='display:block;width:100%;border:none;border-radius:4px;padding:1.1em 1em' placeholder='Email Address'
+                            />
+                            <input id='website-form-input' name='website' type="hidden" name="website" />
+                            <button class='analyser-send'>See Results</button>
+                            <p style='font-size:1em;text-align:center;width:100%'>We'll contact you for a completely <b>free</b> consultation.</p>
+                        </form>
                 </div>
 
             </div>
@@ -107,7 +125,7 @@
             <h3 class="case-study-header" style="font-size:2.7em;color:#5f5f5f;margin:0;line-height:1.4em">Web design &amp; marketing for Canberra businesses that <b> drives traffic and clients.</b></h3>
             <div class="features">
                 <div class="feature">
-                    <i class="icon ion-earth" style="float:left;"></i> 
+                    <i class="icon ion-earth" style="float:left;"></i>
                     <p class="feature-title">High-Converting Websites</p>
 
                     <p class="feature-desc">We'll use the latest page optimisation techniques to increase conversions and clients to your business.</p>
@@ -125,49 +143,49 @@
                 <div class="feature">
                     <i class="icon ion-arrow-graph-up-right" style="float:left;"></i>
                     <p class="feature-title">SEO</p>
-                    <p class="feature-desc">Boost your sites Google rankings, climb the results amongst your competitors. More traffic and a high conversion-rate = More clients.</p>
+                    <p class="feature-desc">Boost your sites Google rankings, climb the results amongst your competitors. More traffic and a high
+                        conversion-rate = More clients.</p>
                 </div>
             </div>
 
-        </div>   
+        </div>
     </section>
 
-     <section class="portfolio">
-            <h3 class="case-study-header" style="max-width:1100px;margin:0 auto;margin-bottom:0.3em">CASE STUDY</h3>
-            <article id="hg" class="container">
-                <div class="title">
-                    <h1>HUGH GORDON ARCHITECT</h1>
-                    <div class="portfolio-image">
-                        <a href="https://www.hughgordon.com.au" target="_blank"><img src="../images/hg.jpg"></a>
-        </div>
-        </div>
-        <div class="portfolio-right">
-
-            <div class="problem">
-                <h3>Problem</h3>
-                <p>Hugh Gordon Architect is a leading <a href="https://www.hughgordon.com.au">Canberra architecture firm</a>,
-                    and required a new web presence. Their previous site, while containing all the right information, was
-                    visually outdated and hard to navigate. It was not clear to the potential clients what the intended next
-                    step was.
-                </p>
-
-                <p>Content was not easily modified - Despite a rapidly growing portfolio. Hugh Gordon Architect required a continuous
-                    stream of updates to their site.</p>
-                <p>Their search engine standings were also poor - showing on the second page for relevant keywords.</p>
+    <section class="portfolio">
+        <h3 class="case-study-header" style="max-width:1100px;margin:0 auto;margin-bottom:0.3em">CASE STUDY</h3>
+        <article id="hg" class="container">
+            <div class="title">
+                <h1>HUGH GORDON ARCHITECT</h1>
+                <div class="portfolio-image">
+                    <a href="https://www.hughgordon.com.au" target="_blank"><img src="../images/hg.jpg"></a>
+                </div>
             </div>
+            <div class="portfolio-right">
 
-            <div class="solution">
-                <h3>Solution</h3>
-                <p>A modern, CMS-based website was designed and implemented - allowing Hugh Gordon Architect staff to log into
-                    their own website, and <b>manage their own content.</b></p>
-                <p>A fully <b>mobile friendly</b> design. Over <b>51%</b> of internet users view websites through a mobile device
-                    - Capturing this market is essential, and in this case-study had a <b>direct increase</b> in conversions
-                    via mobile devices.</p>
-                <p>The new website is <b> search engine optimised</b>. Resulting in a jump of over <b>seven</b> Google rankings.
-                    We're pleased to hear that HGA have seen a sharp increase in traffic and as a result, clients.</p>
+                <div class="problem">
+                    <h3>Problem</h3>
+                    <p>Hugh Gordon Architect is a leading <a href="https://www.hughgordon.com.au">Canberra architecture firm</a>,
+                        and required a new web presence. Their previous site, while containing all the right information,
+                        was visually outdated and hard to navigate. It was not clear to the potential clients what the intended
+                        next step was.
+                    </p>
+
+                    <p>Content was not easily modified - Despite a rapidly growing portfolio. Hugh Gordon Architect required
+                        a continuous stream of updates to their site.</p>
+                    <p>Their search engine standings were also poor - showing on the second page for relevant keywords.</p>
+                </div>
+
+                <div class="solution">
+                    <h3>Solution</h3>
+                    <p>A modern, CMS-based website was designed and implemented - allowing Hugh Gordon Architect staff to log
+                        into their own website, and <b>manage their own content.</b></p>
+                    <p>A fully <b>mobile friendly</b> design. Over <b>51%</b> of internet users view websites through a mobile
+                        device - Capturing this market is essential, and in this case-study had a <b>direct increase</b>                        in conversions via mobile devices.</p>
+                    <p>The new website is <b> search engine optimised</b>. Resulting in a jump of over <b>seven</b> Google rankings.
+                        We're pleased to hear that HGA have seen a sharp increase in traffic and as a result, clients.</p>
+                </div>
+
             </div>
-
-        </div>
         </article>
     </section>
 
@@ -183,7 +201,8 @@
                 </ul>
                 <ul class="package-list" style="display:inline-block;width:50%;list-style-type:none;padding-left:0;margin-bottom:2em">
                     <li><i class="icon ion-arrow-graph-up-right" style="color:#666"></i>On-Page <b>SEO</b> + SEO strategy consultation</li>
-                    <li><i class="icon ion-document-text" style="color:#666"></i>No lock-in contracts.</b></li>
+                    <li><i class="icon ion-document-text" style="color:#666"></i>No lock-in contracts.</b>
+                    </li>
                 </ul>
 
             </div>
@@ -218,7 +237,7 @@
         <div class="container intro">
 
             <div>
-                <h3 style="opacity:0.6;font-size:1.4em;margin:0;color:#999"><a style='font-size:0.8em;color:unset;text-align:left;display:inline;line-height:45px;' href="mailto:calum.johnston.web@gmail.com">GET IN CONTACT<br><span style="font-weight:800;">calum.johnston.web@gmail.com</span></a></h3>
+                <h3 style="opacity:0.6;font-size:1.4em;margin:0;color:#999"><a style='font-size:0.8em;color:unset;text-align:left;display:inline;line-height:45px;' href="mailto:info@orphixmedia.com">GET IN CONTACT<br><span style="font-weight:800;">info@orphixmedia.com</span></a></h3>
             </div>
 
         </div>
