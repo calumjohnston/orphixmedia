@@ -14,7 +14,7 @@ $(document).ready(function () {
     analyserForm.submit(function(event){
         event.preventDefault();
         fbq('track','Lead');
-
+        gtag('event', 'analyselead');
         // Change to your service ID, or keep using the default service
         var service_id = "default_service";
         var template_id = "analyser";
@@ -35,7 +35,7 @@ $(document).ready(function () {
     var myform = $("form#myform");
     myform.submit(function (event) {
         event.preventDefault();
-
+        gtag('event', 'contactform');
         // Change to your service ID, or keep using the default service
         var service_id = "default_service";
         var template_id = "template_ETEAAIDi";
@@ -90,7 +90,7 @@ function stopAnimation(element) {
 // Analyser
 $('.analyse-btn').click(function (e) {
     e.preventDefault();
-
+    gtag('event', 'analyse');
     var sWebsite = $('#analyser').val();
     $('#website-form-input').val(sWebsite);
 
