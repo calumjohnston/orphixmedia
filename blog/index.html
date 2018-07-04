@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" itemprop="description" content="We're Orphix Media, a Canberra based web design studio. We design, develop, and optimise websites for local businesses in Canberra - increasing clicks, traffic, and driving clients.">
+    <meta name="keywords" itemprop="keywords" content="Canberra based web design, web design in canberra, canberra web designer, web design canberra, freelance web design, web designer, web developer, custom websites, custom web design">
+    <title>Orphix Media | Blog - 6 UI Tips for Improving Your Website's Design | Web Design in Canberra </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/component.css" />
+    <script src="../js/modernizr.custom.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121799577-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121799577-1');
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a class="logo-link" href="/">
+                <h1 class="logo"><i class="fa fa-rocket"></i>orphix media</h1>
+            </a>
+            <i class="fa fa-bars toggle-menu"></i>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/websites-for-architects">Web Design for Architects</a></li>
+                    <li><a href="mailto:calum.johnston.web@gmail.com">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="splash" style="height:35vh">
+        <div class="container intro">
+            <div class="lead-container">
+                <h1 id="lead-text">Blog</h1>
+                <h2>DESIGN. WEB. TECH</h2>
+
+            </div>
+        </div>
+    </section>
+
+    <img src="../images/simple-ui-tips.JPG" alt="6 Simple Tips for Web Design Mastery" style="visibility:hidden;position:absolute;">
+
+    <section class="ethos container" style="height:auto">
+        <h3 class="case-study-header" style="padding-bottom: 0.55em;">DESIGN</b>
+        </h3>
+        <h3 class="case-study-header" style='font-size:2em;color:#666;padding-bottom:0;margin-bottom:0.4em'>6 UI Tips For Improving Your Website's Design</b>
+        </h3>
+        <p style="padding-bottom: 1em;border-bottom:1px solid #ececec;margin-bottom:3em;color:#ababab">24th March 2018</p>
+        <article>
+            <h4 style='font-size:2em;margin-bottom:1em'>1. Lose the borders</h4>
+            <p>Next time you add a border to an element, ask yourself if your really need it.</p>
+            <p>Often times a box shadow is enough to give you the visual separation you're looking for.</p>
+            <p style="margin-bottom:3em"></p>
+
+            <p class="code">border:1px solid #999;</p>
+            <div class="demo-div" style="position:relative;height:200px;width:350px;border:1px solid #999;margin-right:3em;margin-bottom:4em;padding:1em">
+                <p style="font-size:1.2em;">Modal</p>
+                <p style="position:absolute;top:4px;right:8px;font-size:2em;opacity:0.5">&times;</p>
+            </div>
+
+            <p class="code">border:none; <br>box-shadow:0px 2px 12px <br>rgba(0,0,0,0.27);</p>
+            <div class="demo-div" style="position:relative;height:200px;width:350px;border:none; box-shadow:0px 2px 12px rgba(0,0,0,0.27);padding:1em">
+                <p style="font-size:1.2em;">Modal</p>
+                <p style="position:absolute;top:4px;right:8px;font-size:2em;opacity:0.5">&times;</p>
+            </div>
+
+        </article>
+
+
+        <article>
+            <h4 style='font-size:2em;margin-bottom:1em'>2. The Subtle Gradient</h4>
+            <p>If the first thing that comes to mind when you hear 'gradient' is bright red and yellow Microsoft Word Art, this
+                ones for you.</p>
+            <p>Take a look at <a style="border-bottom:1px dashed #999;" href="https://stripe.com">Stripe.com</a>. Stripe's front-end
+                design is highly regarded in the web design industry, and one of the things that really sets them apart is
+                their use of subtle gradients. </p>
+            <p>A subtle gradient is simply a gradient that transitions between two colours that aren't too far apart to begin
+                with.</p>
+            <p>A great resource for finding and creating subtle gradients is: <a style="border-bottom:1px dashed #999;" href="https://uigradients.com">uigradients.com.</a></p>Not
+            a plug!</p>
+            <p style="margin-bottom:3em"></p>
+
+            <p class="code">Stripe.com's usage of the subtle<br>gradient.</p>
+            <div style="margin-top:1
+                            em;">
+                <img class="demo-img" style="max-width:800px;box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);"
+                    src="../images/stripe.jpg" alt="Stripe's use of the 'subtle gradient' effect.">
+            </div>
+            <br>
+            <p>Next time you're adding a block of colour to your design, try adding the property:</p>
+            <p class="code">background: #36D1DC; /* Fallback */<br> background: -webkit-linear-gradient(to top, #5B86E5, #36D1DC);<br> background:
+                linear-gradient(to top, #5B86E5, #36D1DC); <br>
+            </p>
+        </article>
+        <a name="3"></a>
+        <article style="margin-bottom:8em;">
+            <h4 style='font-size:2em;margin-bottom:1em'>3. The Soft Box-Shadow</h4>
+            <p>If I could only give one tip it would be this - Sort out your box-shadow. The purpose of a box-shadow property
+                is to suggest depth in an otherwise 2D design </p>
+            <p style="margin-bottom:2em">Though not all box-shadows are made equal. Compare the two following box-shadow properties:</p>
+            <p class="code">box-shadow:0px 0px 12px #000;</p>
+            <div class="demo-div" style="height:200px;width:250px;box-shadow:0px 0px 12px rgba(0,0,0,0.8);margin-right:3em;margin-bottom:4em"></div>
+            <p class="code">0px 2px 12px rgba(0, 0, 0, 0.27);</p>
+            <div class="demo-div" style="height:200px;width:250px;box-shadow: 0px 2px 12px rgba(0,0,0,0.27)"></div>
+
+            <p style="margin-top:2em;">Toning down the color to a ~27% black, and adding a 2px vertical offset makes all the difference.</p>
+        </article>
+
+        <article>
+            <a name="4"></a>
+            <h4 style='font-size:2em;margin-bottom:1em'>4. Lighter, not just smaller</h4>
+            <p>It's completely logical to think that if you want to de-emphasize an element, you should make it smaller. However,
+                going too small on the font-size can make your content tough to read for visually impaired users.
+                <p>Next time you want to de-emphasize, try making the text slightly lighter. This achieves the same effect,
+                    but also looks much better to the eye.</p>
+                <p>Take the following two examples:</p>
+                <p style="margin-bottom:3em"></p>
+
+                <div class="example-code">
+                    <p style="color:#222;font-weight:600;font-size:2rem;margin-bottom:0.2em;">Hello Clarice</p>
+                    <p style="color:#000;font-size:0.9rem;">It's nice to see you again.</p>
+                </div>
+
+                <div class="example-code" style="margin-bottom:3.5em;">
+                    <p style="color:#222;font-weight:600;font-size:2rem;margin-bottom:0.2em">Hello Clarice</p>
+                    <p style="color:#777;font-size:1.2rem;">It's nice to see you again.</p>
+                </div>
+
+                <p>This is a simple way to create a visual hierarchy.</p>
+        </article>
+
+
+
+        <article>
+            <h4 style='font-size:2em;margin-bottom:1em'>5. Red for destructive</h4>
+            <p>Highlighting destructive action buttons in red, as well as presenting an additional 'Are you sure?' dialog is
+                an effective way of preventing users from making misclicks - Especially if there is data deletion on the
+                line.</p>
+            <p>Also, the cancel button should rarely have the same visual weight as the action button.</p>
+            <p style="margin-bottom:3em"></p>
+
+            <h4 style="font-size:2em;color:mediumseagreen;margin-bottom:1em">Do's</h4>
+            <div class="demo-div" style="position:relative;height:200px;width:350px;box-shadow:0px 2px 12px rgba(0,0,0,0.27);margin-right:3em;margin-bottom:2em;padding:1em">
+                <p style="font-size:1.2em;">Modal</p>
+                <p style="position:absolute;top:4px;right:8px;font-size:2em;opacity:0.5">&times;</p>
+                <div class="example-buttons">
+                    <p style="color:#fff;background:mediumseagreen">SUBMIT</p>
+                    <p style="color:#777">Cancel</p>
+                </div>
+            </div>
+            <div class="demo-div" style="position:relative;height:200px;width:350px;box-shadow:0px 2px 12px rgba(0,0,0,0.27);margin-right:3em;margin-bottom:4em;padding:1em">
+                <p style="font-size:1.2em;">Modal</p>
+                <p style="position:absolute;top:4px;right:8px;font-size:2em;opacity:0.5">&times;</p>
+                <div class="example-buttons">
+                    <p style="color:#fff;background:indianred">DELETE</p>
+                    <p style="color:#777">Cancel</p>
+                </div>
+            </div>
+
+            <h4 style="font-size:2em;color:indianred;margin-bottom:1em">Dont's</h4>
+            <div class="demo-div" style="position:relative;height:200px;width:350px;box-shadow:0px 2px 12px rgba(0,0,0,0.27);margin-right:3em;margin-bottom:3em;padding:1em">
+                <p style="font-size:1.2em;">Modal</p>
+                <p style="position:absolute;top:4px;right:8px;font-size:2em;opacity:0.5">&times;</p>
+                <div class="example-buttons">
+                    <p style="color:#fff;background:mediumseagreen">DELETE</p>
+                    <p style="color:#777">Cancel</p>
+                </div>
+            </div>
+
+            <div class="demo-div" style="position:relative;height:200px;width:350px;box-shadow:0px 2px 12px rgba(0,0,0,0.27);padding:1em">
+                <p style="font-size:1.2em;">Modal</p>
+                <p style="position:absolute;top:4px;right:8px;font-size:2em;opacity:0.5">&times;</p>
+                <div class="example-buttons">
+                    <p style="color:#fff;background:#adadad">DELETE</p>
+                    <p style="color:#fff;background:#adadad;margin-right:10px">Cancel</p>
+                </div>
+            </div>
+
+        </article>
+
+
+        <article>
+            <a name="5"></a>
+            <h4 style='font-size:2em;margin-bottom:1em'>6. Shadow your text</h4>
+            <p>It's a simple truth; if you want to make white text visible on any background, add a black border. But unless
+                it's on a facebook meme, it's not going to fit in with anyones design aesthetic.</p>
+            <p>Instead, try adding a subtle text-shadow to your text to make it both more readable, and pleasing to the eye.</p>
+            <p style="margin-bottom:3em"></p>
+
+            <p class="code">No text shadow</p>
+            <div class="demo-div" style="background:#d2d2d2;position:relative;height:200px;width:350px;margin-right:3em;margin-bottom:4em;padding:2em">
+                <p style="font-size:3.2em;color:#fff">Hello</p>
+                <p style="position:absolute;top:4px;right:8px;font-size:2em;opacity:0.5">&times;</p>
+            </div>
+
+            <p class="code">text-shadow:0px 1px 2px rgba(0,0,0,0.4)</p>
+            <div class="demo-div" style="background:#d2d2d2;position:relative;height:200px;width:350px;border:none; box-shadow:0px 2px 12px rgba(0,0,0,0.27);padding:2em">
+                <p style="font-size:3.2em;color:#fff; text-shadow:0px 1px 2px rgba(0,0,0,0.4)">Hello</p>
+                <p style="position:absolute;top:4px;right:8px;font-size:2em;opacity:0.5">&times;</p>
+            </div>
+
+        </article>
+
+    </section>
+
+    <section class="upsell" style="padding:1em 0;background: #f5f5f5;padding: 1em;color: #616161;font-size: 16px;">
+        <div style="max-width:1080px;margin:0 auto;">
+            <h3 class="case-study-header" style="font-size:2.4em;color:#5f5f5f;margin:0;">WHO WE ARE</h3>
+            <p>Orphix Media are a Canberra based Web Design team, focusing on delivering effective websites for local Canberra
+                businesses, increasing traffic and employing techniques to turn this traffic directly into clients.</p>
+        </div>
+    </section>
+
+    <section style="background: #464646;padding: 1em;">
+        <div class="container intro">
+
+            <div>
+                <h3 class="case-study-header" style="opacity:0.6;font-size:2.4em;margin:0"><a style='color:#999;text-align:left;display:inline;line-height:45px;' href="mailto:calum.johnston.web@gmail.com">GET IN CONTACT<br><span style="font-weight:800;">calum.johnston.web@gmail.com</span></a></h3>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../js/grid.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        $(function () {
+            Grid.init();
+        });
+
+        var offset = $('.ethos').offset().top;
+        var navbar = $('header');
+        var navbar_items = $('.logo,nav ul li a,header .toggle-menu');
+
+        function navBarColor() {
+
+            console.log("hello");
+            position = $(this).scrollTop();
+            if (position < offset) {
+                navbar.css('background', 'transparent');
+                navbar.css('border-bottom', 'none');
+                navbar_items.css('color', '#fff');
+            } else {
+                navbar.css('background', '#fff');
+                navbar.css('border-bottom', '1px solid #ececec');
+                navbar_items.css('color', '#000');
+            };
+        }
+
+        navBarColor();
+        window.addEventListener('scroll', navBarColor);
+    </script>
+
+
+</body>
+
+</html>
