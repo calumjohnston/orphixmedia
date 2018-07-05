@@ -993,4 +993,9 @@ footer .social a:hover{
     .contact h1{
       font-size:18px;
     }
+    .contact-info{
+        width:100%;
+        text-align: left;
+        display: inline-block;
+    }
 }
