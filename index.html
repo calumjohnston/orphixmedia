@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
     <link href="css/style.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/default.css" />
@@ -62,17 +63,16 @@
         </section>
     </div>
     <div style='width:100%;text-align:center;padding:1.5em;background: #f9f9f9;border-bottom: 1px solid #efefef;'>
-        <a href="#" style='font-weight:bold;font-size:2em;color:#be84a7'>
+        <a href="#" style='font-weight:bold;font-size:2em;color:#fd5a39'>
             <ion-icon name="call" style='position:relative;top: 0.3em;color:#fff;'></ion-icon>(02) 6172 1499
         </a>
     </div>
     <section class="ethos container">
-        <h3 class="case-study-header" style="font-size:3.15em;margin-bottom:0.45em;">Do you want more <b style="color: #be84a7;">clients?</b></h3>
-        <p>We build effective, modern websites specifically designed for <b>Architects and Builders.</b></p>
-        <p>This narrow focus allows us to create websites for our clients that are <b>tailored</b> to the specific needs of
-            Architecture and Building practices.</p>
-        <p></p>
-        <p>Inspiring <b>confidence</b> in both business and consumer; we deliver websites for local businesses that <b>demand attention.</b></p>
+        <h3 class="case-study-header" style="font-size:3.15em;margin-bottom:0.45em;">Do you want more <b style="color: #fd5a39;">clients?</b></h3>
+        <p style='font-size:1.3em;line-height:2em;color:#333'>Give your business a website you're <b>proud</b> to show your clients. We build effective, modern websites specifically designed for <b>Architects and Builders in Canberra.</b> Our narrow focus allows us to create stunning websites for our clients that are <b>specifically tailored</b> to the needs of
+            Architecture and Building firms and practices.</p>
+        
+
     </section>
 
     <section id='laptop-glow' style="padding:0;"></section>
@@ -114,27 +114,54 @@
         </article>
     </section>
 
-    <section id='laptop-desk' style="padding:0;"></section>
+    <section id='laptop-desk' style="padding:0!important;height:auto;background-position:top;">
+            <div style="background:rgba(255,255,255,0.5);overflow:hidden;height:100%;display:flex;align-items:center;padding:2em 0">
+                <div id="contact-div">
+                    <h3 style='margin-bottom:0.5em'>Let's work together.</h3>
+                   <p><ion-icon name="mail" style='position:relative;top: 0.3em;font-size:1.1em;margin-right:0.5em'></ion-icon><a href="mailto:info@orphixmedia.com" style='font-weight:600;color:#444'>info@orphixmedia.com</a></p>
+                   <p style='margin-bottom:1em;font-weight:600;color:#444'><ion-icon name="call" style='position:relative;top: 0.3em;font-size:1.1em;margin-right:0.5em'></ion-icon>(02) 6172 1499</p>
+                    <form id="myform" method="post" style='margin:0 auto;padding:1em;'>
+                        <label>Your Email Address</label>
+                        <input style='display:block;width:100%;padding:0.5em' type="text" name="email" />
+                        <label>Your Website</label>
+                        <input style='display:block;width:100%;padding:0.5em' type="text" name="website" />
+                        <label>Optional Message</label>
+                        <textarea style='display:block;width:100%;padding:0.5em' type="text" name="message_html"></textarea>
+                        <button style='width:100%;padding:1.3em 0;margin-top:1em;background:#3e8eb5;color:#fff;border:none;border-radius:2px;'>
+                        Send
+                        </button>
+                        <p style='font-size:1em;text-align:center;width:100%'>We'll get back to you via email.</p>
+                    </form>
+                </div>
+    
+            </div>
+        </section>
 
     <section class="upsell" style="padding:1em;background: #f5f5f5;color: #616161;font-size: 16px;">
         <div style="max-width:1080px;margin:0 auto;">
             <h3 class="case-study-header" style="font-size:2.4em;color:#5f5f5f;margin:0;">WHO WE ARE</h3>
-            <p>We're a small Canberra Web Design team, focusing on delivering effective websites for local Canberra Architects
-                and Builders, increasing traffic and employing techniques to turn this traffic directly into clients.</p>
+            <p>We're a small, Canberra based team of enthusiastic designers focused on delivering effective websites for local Canberra businesses, with the singular goal of delivering
+                a final product that both you, and your clients will be impressed with.</p>
         </div>
     </section>
-
-    <section style="background: #464646;padding: 1em;">
+  
+    <section style="background: #D36049;padding: 1em;">
         <div class="container intro">
 
             <div>
-                <h3 style="color:#999;opacity:0.6;font-size:1.4em;margin:0"><a style='color:unset;text-align:left;display:inline;line-height:45px;' href="mailto:info@orphixmedia.com">GET IN CONTACT<br><span style="font-weight:800;">info@orphixmedia.com</span></a></h3>
+                <h3 style="color:#fff;opacity:0.8;font-size:1.4em;margin:0"><a style='color:unset;text-align:left;display:inline;line-height:45px;' href="mailto:info@orphixmedia.com">GET IN CONTACT<br><span style="font-weight:800;">info@orphixmedia.com</span></a></h3>
             </div>
 
         </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_rI248ktiLtblnOZ3PV5Bu");
+        })();
+    </script>
     <script src="js/grid.js"></script>
     <script src="js/script.js"></script>
     <script>
