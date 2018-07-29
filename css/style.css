@@ -125,7 +125,14 @@ header{
     animation-fill-mode: forwards;
 }
 #lead-text{
+    font-size:62px;
+    line-height:62px;
     text-align:right;
+}
+.splash-cont {
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .splash .container h2{
     width:100%;
@@ -146,7 +153,7 @@ section{
     animation-delay: 300ms;
     opacity:0;
     margin: 0 auto;
-    width: 470px;
+    width: 74em;
     cursor: default;
 }
 
@@ -387,8 +394,22 @@ h3{
     line-height:18px;
     padding-bottom: 3px;
 }
-
-
+.three-panel {
+    width:70em;
+    margin:0 auto;
+    overflow: hidden;
+    padding:5em 0;
+}
+.three-panel__panel {
+    width:33.3333%;
+    float:left;
+    padding:0.2em 1em;
+}
+.three-panel__panel h2 {
+    width: 9em;
+    font-size: 1.6em;
+    color: #4d80c1;
+}
 @media (max-width: 1450px){
 
     .title{
@@ -595,7 +616,7 @@ header .toggle-menu{
 }
 
 .splash{
-    background: linear-gradient(to right, #D36049, #ea5f43);
+    background: linear-gradient(to right, #214356f2, #004e9ea8);
     height: auto;
     min-height: 60vh;
     overflow: hidden;
