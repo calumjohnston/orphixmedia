@@ -618,7 +618,7 @@ header .toggle-menu{
 .splash{
     background: linear-gradient(to right, #214356f2, #004e9ea8);
     height: auto;
-    min-height: 60vh;
+    min-height: 67vh;
     overflow: hidden;
     position: relative;
 }
@@ -654,7 +654,16 @@ header .toggle-menu{
     opacity: 0.6;
     font-size:22px;
 }
-
+.cta-btn {
+    float: right;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 1px solid #c0d7ffe0;
+    padding: 1em 1.5em;
+    color: #c0d7ffe0;
+    margin-right: 0.5em;
+    background: none;
+}
 .overview{
     text-align: center;
 
