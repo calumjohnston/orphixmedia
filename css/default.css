@@ -97,7 +97,6 @@ a {
 
 .codrops-top a:hover {
 	background: rgba(255,255,255,0.8);
-	color: #000;
 }
 
 .codrops-top span.right {
@@ -107,4 +106,8 @@ a {
 .codrops-top span.right a {
 	float: left;
 	display: block;
+}
+
+nav ul li a{
+	color:#fff!important;
 }
