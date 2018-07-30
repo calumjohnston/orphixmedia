@@ -1,4 +1,19 @@
+@media(max-width:1050px) {
+#package-list div{
+    width:100%!important;
+}
+#package-list {
+    max-width: 30em;
+    margin: 0 auto;
+    overflow: hidden;
+}
+}
+
 @media(max-width:580px) {
+    .case-study-header{
+        text-align: center;
+    }
+
     .case-study-header a, .case-study-header a span{
         font-size:1.3rem;
     }
