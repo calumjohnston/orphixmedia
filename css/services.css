@@ -22,3 +22,10 @@
         display:block!important;
     }
 }
+.upsell {
+    overflow:hidden;
+}
+#package-list div{
+    width:50%;
+    float:left;
+}
