@@ -1,0 +1,24 @@
+@media(max-width:580px) {
+    .case-study-header a, .case-study-header a span{
+        font-size:1.3rem;
+    }
+    #contact-div p {
+        font-size:1.3rem;
+    }
+    .case-study-header{
+        font-size:2rem!important;
+    }
+    .feature{
+        padding:1em!important;
+        padding-top:1em!important;
+    }
+    .upsell{
+        padding:10px 15px!important;
+    }
+    .solution h3{
+        font-weight:600;
+    }
+    #info-bar a span{
+        display:block!important;
+    }
+}

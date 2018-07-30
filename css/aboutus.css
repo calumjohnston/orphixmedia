@@ -1,0 +1,8 @@
+@media(max-width:900px) {
+    .splash {
+        height:15em!important;
+    }
+    .splash .container{
+        margin-top:6em;
+    }
+}
