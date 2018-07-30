@@ -394,6 +394,9 @@ h3{
     line-height:18px;
     padding-bottom: 3px;
 }
+
+
+/* Three panel*/
 .three-panel {
     width:70em;
     margin:0 auto;
@@ -410,6 +413,61 @@ h3{
     font-size: 1.6em;
     color: #4d80c1;
 }
+
+@media(max-width:1200px) {
+    /*Splash*/
+    .lead-container {
+        width:100%;
+    }
+    .three-panel {
+        width:100%;
+        padding:4em 2em;
+    }
+    .three-panel__panel {
+        width:100%;
+        text-align: center;
+        margin-bottom:3em;
+    }
+    .three-panel__panel h2 {
+        width:auto;
+    }
+    .three-panel__panel p {
+        max-width:30em;
+        font-size:1.2em;
+        margin: 0 auto;
+    }
+
+}
+@media(max-width:780px) {
+    nav ul li {
+        display:none;
+    }
+    #phone-nav, #contact-nav{
+        display:inline-block;
+    }
+    #lead-text{
+        font-size:50px;
+    }
+    #hg p{
+        font-size:20px;
+    }
+    #laptop-desk > div{
+        padding:0!important;
+    }
+}
+
+@media(max-width:590px) {
+
+    #lead-text{
+        font-size:40px;
+    }
+    #info-bar a span{
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+}
+
 @media (max-width: 1450px){
 
     .title{
@@ -455,7 +513,7 @@ h3{
         width:unset!important;
     }
     .case-study-header{
-        font-size:1.4em!important;
+        font-size:2.6em!important;
     }
     .feature{
         width:100%;
@@ -518,7 +576,7 @@ h3{
     #lead-text{
         line-height:35px;
         width:auto;
-        font-size:26px;
+        font-size:35px;
     }
     #sub-text{
         font-size:18px;
@@ -875,7 +933,6 @@ footer .social a:hover{
     .overview > div > div{
         width:100%;
         margin-bottom:20px;
-        border: ;
     }
     .overview > div > div p{
         padding:15px;
