@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/analyser.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/default.css" />
@@ -68,20 +69,21 @@
             </a>
             <i class="fa fa-bars toggle-menu"></i>
             <nav>
-                <ul>
-
-                    <li>
-                        <a href="#" style='font-weight:bold;'>
-                            <ion-icon name="call" style='position:relative;top: 0.3em;color:#fff;font-size:1.4em;margin-right:0.5em'></ion-icon>(02) 6172 1499</a>
-                    </li>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="../blog/tips-for-improving-your-website">Blog</a></li>
-                    <li><a href="/contact">Contact us</a></li>
-                </ul>
+                    <ul>
+                            
+                        <li id='phone-nav'>
+                            <a href="#" style='font-weight:bold;'>
+                                <ion-icon name="call" style='position:relative;top: 0.3em;color:#fff;font-size:1.4em;margin-right:0.5em'></ion-icon>(02) 6172 1499</a>
+                        </li>
+                        <li><a href="/about-us">About Us</a></li>
+                        <li><a href="/web-design-canberra">Services</a></li>
+                        <li><a href="/contact">Careers</a></li>
+                        <li id='contact-nav'><a href="/contact">Contact us</a></li>
+                    </ul>
             </nav>
         </div>
     </header>
-
+    <div class="splash-cont">
     <section class="splash" style="height:auto;min-height:60vh">
         <div class="container intro">
             <div class="lead-container" style="width:auto;">
@@ -119,10 +121,10 @@
             </div>
         </div>
     </section>
-
-    <div style='width:100%;text-align:center;padding:1.5em;background: #f9f9f9;border-bottom: 1px solid #efefef;'>
-        <a href="#" style='font-weight:bold;font-size:2em;color:#e4654c'>
-            <ion-icon name="call" style='position:relative;top: 0.3em;color:#fff;'></ion-icon>(02) 6172 1499
+</div>
+<div id='info-bar' style='width:100%;text-align:center;padding:1.5em;background: #f9f9f9;border-bottom: 1px solid #efefef;'>
+        <a href="#" style='font-weight:300;font-size:1.4em;color:#777777'>
+            <span><ion-icon name="mail" style='position: relative;top: 0.2em;color:#c5c5c5;font-size:0.9em;margin-right:0.5em'></ion-icon>info@orphixmedia.com </span><span><ion-icon name="call" style='margin-left:2em;position: relative;top: 0.2em;color:#c5c5c5;font-size:0.9em;margin-right:0.2em'></ion-icon> (02) 6172 1499</span>
         </a>
     </div>
 
@@ -293,7 +295,34 @@
         window.addEventListener('scroll', navBarColor);
     </script>
 
-
+<!-- Start of Async Drift Code -->
+<script>
+        "use strict";
+        
+        !function() {
+          var t = window.driftt = window.drift = window.driftt || [];
+          if (!t.init) {
+            if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+            t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+            t.factory = function(e) {
+              return function() {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }, t.methods.forEach(function(e) {
+              t[e] = t.factory(e);
+            }), t.load = function(t) {
+              var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+              o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            };
+          }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('4nkc2uh8gmwz');
+        </script>
+        <!-- End of Async Drift Code -->
 </body>
 
 </html>
