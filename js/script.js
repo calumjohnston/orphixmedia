@@ -22,11 +22,11 @@ $(document).ready(function () {
         emailjs.sendForm(service_id,template_id,"form#analyser-form")
             .then(function(){ 
             
-            analyserForm.find("button").text("Send");
+            analyserForm.find("button").text("Sent!");
             window.location.hash = 'submitted';
         }, function(err) {
             alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-            analyserForm.find("button").text("Send");
+            analyserForm.find("button").text("Sent!");
         });
         return false;
     });
@@ -44,10 +44,10 @@ $(document).ready(function () {
         emailjs.sendForm(service_id, template_id, "form#myform")
             .then(function () {
                 alert("Sent!");
-                myform.find("button").text("Send");
+                myform.find("button").text("Sent!");
             }, function (err) {
                 alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-                myform.find("button").text("Send");
+                myform.find("button").text("Sent!");
             });
         return false;
     });
